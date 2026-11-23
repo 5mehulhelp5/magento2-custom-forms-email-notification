@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 ### Added
 
+## [100.2.1] - 2026-11-23
+### Fixed
+- fix error Form with id "" does not exist.
+
 ## [100.2.0] - 2026-04-16
 ### Added
 - "Send Email To" attribute for admin confirmation email and use system values for it and for template 

@@ -47,7 +47,7 @@ class CustomerEmailValidatorPlugin
     public function afterGetInputValidators(Attribute $attribute, $validators)
     {
         $formId = $attribute->getFormId();
-        $form = $this->formRepository->getById($formId);
+        $form = $this->formRepository->getById($formId, null, true);
 
         if ($form->getCustomerEmailNotificationEnable() && $form->getCustomerNotificationEmailField() == $attribute->getAttributeCode()) {
             $emailValidator = $this->emailValidatorFactory->create();
